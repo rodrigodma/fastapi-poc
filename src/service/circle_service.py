@@ -1,0 +1,2 @@
+class CircleService():
+    pass
