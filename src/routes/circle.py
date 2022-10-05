@@ -9,7 +9,7 @@ Circle = circle.Circle
 
 @router.put("/circle/", response_model=Circle, tags=["circle"])
 async def new_circle(circle: Circle):
-    return await controller.save(Circle)
+    return await controller.save(circle)
 
 @router.get("/circle/", response_model=List[Circle], tags=["circle"])
 async def get_circles():
