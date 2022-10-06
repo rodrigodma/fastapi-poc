@@ -1,7 +1,7 @@
 from typing import List
-from infra.session import CircleSession
-from schemas.circle import Circle, CircleCreate
-from service.circle_service import CircleService
+from ..infra.session import CircleSession
+from ..schemas.circle import Circle, CircleCreate
+from ..service.circle_service import CircleService
 
 class CircleController():
 
