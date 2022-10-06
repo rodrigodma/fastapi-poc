@@ -1,6 +1,6 @@
 from typing import List
 from fastapi import APIRouter, HTTPException
-from models.circle import Circle
+from schemas.circle import Circle
 from controller.circle_controller import CircleController as controller
 
 router = APIRouter(
