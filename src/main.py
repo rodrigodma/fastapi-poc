@@ -2,8 +2,11 @@ from typing import Union
 
 from fastapi import FastAPI
 
+from routes.circle import router as circle_router
+
 app = FastAPI()
 
+app.include_router(circle_router)
 
 @app.get("/")
 def read_root():
