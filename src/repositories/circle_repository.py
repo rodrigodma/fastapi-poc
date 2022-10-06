@@ -1,8 +1,8 @@
 from typing import List
 from sqlalchemy.orm import Session
 
-from models.circle import Circle
-from schemas.circle import Circle, CircleCreate
+from ..models.circle import Circle
+from ..schemas.circle import Circle, CircleCreate
 
 class CircleRepository:
     def __init__(self, session: Session) -> None:

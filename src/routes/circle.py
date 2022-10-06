@@ -1,9 +1,9 @@
 from typing import List
 from fastapi import APIRouter, HTTPException, Depends
-from controller.session_controller import get_session
-from infra.session import CircleSession
-from schemas.circle import Circle, CircleCreate
-from controller.circle_controller import CircleController
+from ..controller.session_controller import get_session
+from ..infra.session import CircleSession
+from ..schemas.circle import Circle, CircleCreate
+from ..controller.circle_controller import CircleController
 
 router = APIRouter(
     prefix = "/circles",

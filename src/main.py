@@ -2,7 +2,7 @@ from typing import Union
 
 from fastapi import FastAPI
 
-from routes.circle import router as circle_router
+from .routes.circle import router as circle_router
 
 app = FastAPI()
 
