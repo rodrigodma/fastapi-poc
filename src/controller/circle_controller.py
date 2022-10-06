@@ -1,11 +1,12 @@
 from typing import List
+from infra.session import CircleSession
 from schemas.circle import Circle, CircleCreate
 from service.circle_service import CircleService
 
 class CircleController():
 
-    def __init__(self) -> None:
-        self._circle_service = CircleService()
+    def __init__(self, session: CircleSession) -> None:
+        self._circle_service = CircleService(session)
 
     def save(self, circle: CircleCreate):
         self._circle_service.save(circle)
