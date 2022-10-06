@@ -1,10 +1,17 @@
+from typing import List
+from schemas.circle import Circle, CircleCreate
+from service.circle_service import CircleService
+
 class CircleController():
 
-    def save(Circle):
-        pass
+    def __init__(self) -> None:
+        self._circle_service = CircleService()
 
-    def getAll():
-        pass
+    def save(self, circle: CircleCreate):
+        self._circle_service.save(circle)
 
-    def find(Circle):
-        pass
+    def get_all(self) -> List[Circle]:
+        return self._circle_service.get_all()
+
+    def find(self, id: int) -> Circle:
+        return self._circle_service.find(id)
