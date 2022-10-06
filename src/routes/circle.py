@@ -1,6 +1,6 @@
 from typing import List
 from fastapi import APIRouter, HTTPException
-from schemas.circle import Circle
+from schemas.circle import Circle, CircleCreate
 from controller.circle_controller import CircleController as controller
 
 router = APIRouter(
@@ -10,12 +10,12 @@ router = APIRouter(
 )
 
 @router.put("/", response_model=Circle)
-async def new_circle(circle: Circle):
+async def new_circle(circle: CircleCreate):
     return await controller.save(circle)
 
 @router.get("/", response_model=List[Circle])
 async def get_circles():
-    circles = await controller.getAll()
+    circles = await controller.get_all()
     return circles
 
 @router.get("/{id}", response_model=Circle)
