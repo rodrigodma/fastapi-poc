@@ -43,7 +43,7 @@ FastAPI Base Scaffolding
     ```
 6. Activate virtual environment
     ```bash
-    source .\env\bin\activate
+    source ./env/bin/activate
     ```
 7. Install pip dependencies (This will install all FastAPI Modules.  If you do not want [all] plese adjust the req file.)
     ```bash
