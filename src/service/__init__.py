@@ -1,0 +1,2 @@
+class CircleRepository():
+    pass
