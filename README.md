@@ -1,7 +1,7 @@
 FastAPI Base Scaffolding
 =============================================================================
 
-![GitHub](https://img.shields.io/github/license/blevinscm/fastapi-scaffold-base) ![GitHub contributors](https://img.shields.io/github/contributors/blevinscm/fastapi-scaffold-base) ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/blevinscm/fastapi-scaffold-base?include_prereleases)
+![GitHub](https://img.shields.io/github/license/rodrigodma/fastapi-poc) ![GitHub contributors](https://img.shields.io/github/contributors/rodrigodma/fastapi-poc) ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/rodrigodma/fastapi-poc?include_prereleases)
 
 
 <img align="center" width="400" src="./docs/images/fastapi-logo.png"/>
